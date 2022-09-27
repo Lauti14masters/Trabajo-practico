@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h1 {
+    font-size: 3.5em;
+
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 7px 25px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+}
+
+button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.boton-verde {
+    background-color: rgb(41, 167, 68);
+    margin-top: 10px;
+    border: none;
+}
+
+.boton-verde:hover {
+    background-color: rgb(0, 204, 44);
+    color: white;
+}
+
+.boton-verde2 {
+    background-color: rgb(150, 201, 62);
+    margin-top: 10px;
+    border: none;
+}
+
+.boton-verde2:hover {
+    background-color: rgb(0, 204, 44);
+    color: white;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*----------------*/
+header {
+    background-color: rgb(53, 58, 64);
+}
+
+header .container-logo {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    padding: 25px 30px;
+}
+
+header img {
+    width: 112px;
+
+}
+
+header p {
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+header .container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 26px;
+    color: rgb(154, 158, 161);
+}
+
+/*------------------------*/
+#conf-bsas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ba1.jpg);
+    
+    background-size: cover;
+    background-position: center center;
+}
+
+#conf-bsas a {
+    text-decoration: none;
+}
+
+.container-conf button {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+
+
+}
+
+#conf-bsas h2 {
+    color: white;
+}
+
+#conf-bsas p {
+    color: white;
+}
+
+/*---------------------*/
+#oradores {
+    background-color: white;
+    text-align: center;
+    color: white;
+
+}
+
+#oradores .container {
+    padding: 0px;
+}
+
+#oradores p {
+    display: none;
+}
+
+#oradores h2 {
+    margin-top: 0;
+    color: black;
+}
+
+h5 {
+    margin-bottom: -10px;
+    color: rgb(154, 158, 161);
+}
+
+#oradores img {
+    display: none;
+}
+
+#oradores .perfil-oradores .jobs,
+.gates,
+.lovelace {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.jobs {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/steve.jpg);
+
+
+}
+
+.gates {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bill.jpg);
+
+}
+
+.lovelace {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ada.jpeg);
+}
+
+
+/*----------------*/
+
+#lugaryfecha {
+    background-color: rgb(53, 58, 64);
+    color: white;
+    text-align: center;
+    padding: 160px 12px;
+
+}
+
+#lugaryfecha img {
+    display: none;
+}
+
+/*---------------------*/
+#conviertete-orador h2 {
+    margin-top: 0;
+    color: black;
+}
+
+#conviertete-orador p {
+    font-size: x-small;
+}
+
+#conviertete-orador,
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#conviertete-orador input {
+    margin-bottom: 10px;
+}
+
+#conviertete-orador form p {
+    text-align: left;
+}
+
+#conviertete-orador button {
+    width: 100%;
+}
+
+/*--------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px 20px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    
+}
+
+
+
+footer a:hover {
+    color: rgb(154, 158, 161);
+}
+
+
+/*---------------   MEDIA  --------------------*/
+@media (min-width: 900px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        
+    }
+
+
+    header nav {
+        flex-direction: row;        
+    }
+    
+
+    /**************media conf bs as***********************/
+    #conf-bsas {
+        height: 95vh;
+        align-items: flex-end;
+        justify-content: end;
+    }
+
+    #conf-bsas a {
+        text-decoration: none;
+    }
+
+    #conf-bsas .container-conf {
+        width: 790px;
+        height: 330px;
+        text-align: end;
+        padding-right: 157px;
+        margin-bottom: 100px;
+
+    }
+
+
+
+    .container-conf button {
+        display: table-row;
+        font-weight: lighter;
+
+    }
+
+    /**************media oradores***********************/
+    #oradores {
+        align-items: center;
+        display: flex;
+        padding: 20px 50px;
+
+    }
+
+
+    #oradores .perfil-oradores {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    #oradores p {
+        display: flex;
+        margin: 0;
+        padding: 0px;
+        font-size: 14px;
+        padding: 10px 30px;
+        margin-bottom: 30px;
+
+    }
+
+    #oradores .icons {
+        padding: 30px 0px 0px 30px;
+        margin: 0;
+    }
+
+    #oradores h5 {
+        color: black;
+        font-size: inherit;
+    }
+
+    #oradores h3 {
+        padding: 0px 30px;
+    }
+
+    #oradores .perfil-oradores .jobs,
+    .gates,
+    .lovelace {
+        padding: 0;
+        border-radius: 15px;
+        background-image: none;
+        color: black;
+        margin: 20px;
+        border: 1px solid rgb(154, 158, 161);
+        width: 425px;
+        height: 685px;
+    }
+
+    #oradores img {
+        display: block;
+        width: 425px;
+        height: 425px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /**************media lugar y fecha***********************/
+    #lugaryfecha {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 590px;
+        padding: 0;
+
+    }
+
+    #lugaryfecha img {
+        display: flex;
+        width: 100%;
+        height: 590px;
+
+    }
+
+    #lugaryfecha .lugaryfecha {
+        text-align: left;
+        margin: 10px 20px;
+    }
+
+
+    /**************media conviertete orador***********************/
+
+    #conviertete-orador {
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 50px;
+
+    }
+
+    #conviertete-orador form {
+        width: 920px;
+        display: inline;
+
+
+    }
+
+    #conviertete-orador p {
+        font-size: medium;
+    }
+
+    #conviertete-orador input {
+        width: 49.5%;
+
+
+    }
+
+    #conviertete-orador form textarea {
+        width: 99%;
+        height: 130px;
+        margin-top: 15px;
+
+    }
+
+    /*************media footer*********************/
+
+    .footerList {
+        display: flex;
+        justify-content: center;
+        padding-bottom:30px;    }
+
+
+
+}
