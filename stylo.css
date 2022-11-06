@@ -12,6 +12,11 @@ body {
 
 }
 
+.ticket {
+    text-decoration: none;
+
+}
+
 h1 {
     font-size: 3.5em;
 
@@ -126,7 +131,7 @@ header a {
     height: 90vh;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/ba1.jpg);
-    
+
     background-size: cover;
     background-position: center center;
 }
@@ -172,7 +177,7 @@ header a {
     color: black;
 }
 
-h5 {
+#conviertete-orador h5 {
     margin-bottom: -10px;
     color: rgb(154, 158, 161);
 }
@@ -263,7 +268,7 @@ footer {
     padding-top: 10px 20px;
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    
+
 }
 
 
@@ -279,14 +284,14 @@ footer a:hover {
     header {
         position: fixed;
         width: 100%;
-        
+
     }
 
 
     header nav {
-        flex-direction: row;        
+        flex-direction: row;
     }
-    
+
 
     /**************media conf bs as***********************/
     #conf-bsas {
@@ -440,7 +445,88 @@ footer a:hover {
     .footerList {
         display: flex;
         justify-content: center;
-        padding-bottom:30px;    }
+        padding-bottom: 30px;
+    }
+}
+
+/************************************************TICKETS**************************/
+.ticket{
+    position: initial;
+    
+}
+.containerCompras {
+    padding-top: 20px;
+    margin: 5px;
+}
+
+.descuentos, .card {
+    margin: 10px auto;
+    border-radius: 15px;
+
+}
+
+#categoriaSelect,
+.nombre,
+.apellido,
+.mail,
+#cantidad {
+    width: 100%;
+    margin-bottom: 5px ;
+    
+}
+
+label {
+    margin-bottom: 2px;
+}
+.venta{
+    width: 75%;
+    margin: 10px auto;
+}
+.venta p{
+text-align: center;
+}
+
+.venta h5 {
+    text-align: center;
+}
+.botones button{
+    width: 100%;
+}
+hola{
+    display: none;
+}
+
+@media (min-width: 1090px) {
+    .containerCompras .descuentos {
+        display: flex;
+        width: 75%;
+    }
+    .venta .formTicket{
+        display: flex;
+    }
+    .datos{
+        display: flex;
+    }
+    .apellido{
+        margin-left: 5px;
+    }
+    .apellido, .nombre{
+        width: 50%;
+        justify-content:center;
+        padding: 5px;        
+    }
+   .botones{
+    display: flex;
+    margin-bottom: 80px;
+   }
+   #borrar, #resumen{
+    width: 50%;
+        justify-content:center;
+        padding: 5px;   
+   }
+   #borrar{
+    margin-left: 5px;
+   }
 
 
 
